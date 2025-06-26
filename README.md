@@ -116,6 +116,8 @@ Use o método `UsuarioSeeder.inserirUsuarioPadrao()` para cadastrar o usuário i
 ##Desenvolvido por
 
 Lucas Fernandes
+
+
 Vitor Hugo
 
 ---
