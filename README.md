@@ -59,4 +59,65 @@ Sistema desktop em Java com interface gráfica (Swing) e persistência em banco 
 ---
 
 ## Estrutura de Pastas
+src/
+├── model/ # Classes de domínio (Cliente, Item, Pedido, etc.)
+├── dao/ # Acesso a dados (DAOs e conexão)
+└── view/ # Interfaces gráficas (Swing)
+
+---
+
+## Banco de Dados
+
+- Arquivo SQLite localizado em: `banco/banco.db`
+- Criação automática das tabelas ao iniciar a aplicação (`CriarTabelas.java`)
+
+Tabelas:
+- `usuario`
+- `cliente`
+- `item`
+- `pedido`
+- `pedido_item`
+
+---
+
+## 👤 Usuário padrão para login
+
+| Login  | Senha |
+|--------|-------|
+| admin  | 1234  |
+
+Use o método `UsuarioSeeder.inserirUsuarioPadrao()` para cadastrar o usuário inicial.
+
+---
+
+## Como Executar
+
+1. Clone ou baixe o repositório
+2. Abra o projeto no IntelliJ IDEA
+3. Certifique-se de que o SQLite JDBC está adicionado às bibliotecas (`sqlite-jdbc-x.x.x.jar`)
+4. Rode a classe `Main.java`
+5. O banco será criado automaticamente na pasta `banco/`
+6. Acesse com o usuário `admin / 1234`
+
+---
+
+##Requisitos do Projeto (Acadêmico)
+
+- Interface gráfica funcional com navegação por menu
+- Cadastro de entidades com validações
+- Persistência em banco relacional
+- Regras de negócio implementadas
+- Separação em camadas (MVC)
+- Diagrama de classes UML (opcional)
+- Código comentado
+
+---
+
+##Desenvolvido por
+
+Lucas Fernandes
+Vitor Hugo
+
+---
+
 
